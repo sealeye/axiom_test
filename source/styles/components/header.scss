@@ -1,0 +1,24 @@
+.header {
+    padding-top: 18px;
+    padding-left: 19px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    background-color: $azure;
+    display: flex;
+    justify-content: space-between;
+    &__burger {
+        margin-right: 17px;
+    }
+    &__title {
+        font-size: 21px;
+        color: $white;
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: normal;
+        padding-top: 2px;
+    }
+    &__refresh {}
+    &__more {
+        margin-left: 21px;
+    }
+}

@@ -1,0 +1,88 @@
+.card {
+    background-color: $white;
+    width: 38.7%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 0px;
+    box-shadow: $shadow;
+    border-radius: 2px;
+    
+    &__user-block {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        padding-top: 20px;
+        padding-left: 19px;
+        padding-right: 14px;
+        .card__back {
+            margin-right: auto;
+        }
+        .card__more { 
+            margin-left: 14px;
+        }
+    }
+    &__data {}
+    &__image {
+        //todo
+        margin-top: -50px;
+        margin-bottom: -54px;
+    }
+    &__name {
+        font-size: 35px;
+        letter-spacing: -0.4px;
+        color: $white;
+        opacity: 0.87;
+        padding-left: 27px;
+    }
+    &__contacts {
+        padding-top: 23px;
+        padding-left: 32px;
+    }
+    &__svg {
+        float: left;
+        margin-right: 34px;
+        margin-top: 35px;
+    }
+    &__list {
+        @include list-style();
+        margin-left: 52px;
+        padding-right: 15px;
+        padding-top: 30px;
+        li {
+            margin-bottom: 35px;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+        &--phones {
+            border-bottom: 1px solid #dddddd;
+        }
+        &--mails {
+            li:last-child {
+                margin-bottom: 11px;
+            }
+        }
+    }
+    &__link {
+        font-size: 16px;
+        letter-spacing: -0.1px;
+        color: $gray-dark;
+    }
+    &__description {
+        font-size: 13px;
+        letter-spacing: -0.1px;
+        color: $warm-gray;
+        margin-top: 2px;
+    }
+    &__hangout {
+        float: right;
+        margin-top: -34px;
+    }
+    &__create {
+        position: absolute;
+        bottom: -17px;
+        right: 11px;
+        z-index: 2;
+    }
+}

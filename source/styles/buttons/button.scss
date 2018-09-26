@@ -1,0 +1,23 @@
+.button {
+    appearance: none;
+    border-radius: none;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: $white;
+
+    &--big {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+    }
+    &--create {
+        background-color: $pink;
+    }
+    &:hover{
+        color: $pink;
+    }
+}

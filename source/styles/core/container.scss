@@ -1,0 +1,16 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+  @media (--big_tablet) {
+    width: 980px;
+  }
+  @media (--tablet) {
+    width: 640px;
+    padding: 0 10px;
+  }
+  @media (--w_mobile) {
+    width: 320px !important;
+  }
+}

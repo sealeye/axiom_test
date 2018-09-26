@@ -1,0 +1,42 @@
+.aside {
+    display: none;
+    width: 17.8%;
+    min-width: 178px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 100vh;
+    background-color: $white;
+    &__user-block {
+        background-image: url(https://i.pinimg.com/originals/bc/d0/2e/bcd02e2923eeb5f3a94dde5a9e30a236.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__main {
+        padding-top: 7px;
+    }
+    &__list {
+        border-top: 1px solid #d6d5d5;
+        @include list-style();
+        padding-top: 15px;
+        &:first-child{
+            border: none;
+        }
+    }
+    &__link {
+        padding-left: 10%;
+        margin-bottom: 29px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        svg{
+            margin-right: 12%;
+            width: 20px;
+            vertical-align: middle;
+        }
+        &--active{
+            color: $azure;
+        }
+    }
+}
